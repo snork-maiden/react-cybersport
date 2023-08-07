@@ -1,0 +1,45 @@
+.page-header {
+    padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.88) 60%,
+    rgba(87, 184, 255, 1) 60%,
+    rgba(87, 184, 255, 1) 100%
+  );
+}
+
+.page-header__cart {
+    margin-right: 20px;
+  margin-left: auto;
+  background: none;
+  border: none;
+}
+
+.page-header__cart::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: 25px;
+  width: 21px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+}
+
+.page-header__contact-btn {
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-size: 18px;
+  line-height: 62px;
+  padding: 0 20px;
+}
+
+.logo {
+grid-column: 1/-1;
+  display: flex;
+  max-width: 40vw;
+}
