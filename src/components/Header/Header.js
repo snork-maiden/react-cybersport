@@ -1,22 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Header.css";
-import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
-import MenuItem from "./MenuItem/MenuItem";
+import Menu from "./Menu/Menu";
 
 const Header = () => {
-  const menuItems = ['Home', 'About','Team', 'Shop', 'Pages' ]
+
   return (
     <header className="page-header">
-      <Logo className="logo"/>
-      <nav className="page-nav">
-        <ul className="page-nav__list">
-        {menuItems.map((item, index) => (
-          <MenuItem key={index}>{item}</MenuItem>
-        ))}
-        </ul>
-      </nav>
+      <Logo className="logo" />
+      <Menu className="menu" />
       <button className="page-header__cart">
         <svg
           width="31"

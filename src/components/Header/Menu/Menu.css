@@ -1,0 +1,30 @@
+.page-nav {
+  margin: auto;
+  order: -1;
+  margin: 0;
+  margin-right: 0.5em;
+}
+
+.burger-button {
+  cursor: pointer;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.burger-button + .page-nav__list {
+  position: absolute;
+  background-color: black;
+  padding: 1em;
+  border: 1px solid rgba(255, 255, 255, 1);
+  z-index: 3;
+}
+
+.close-burger-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+

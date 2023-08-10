@@ -1,23 +1,17 @@
 .page-header {
-    padding: 0.5em;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-content: space-between;
+  padding: 0.5em;
+  display: flex;
   align-items: center;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.88) 0%,
-    rgba(0, 0, 0, 0.88) 60%,
-    rgba(87, 184, 255, 1) 60%,
-    rgba(87, 184, 255, 1) 100%
-  );
+  background: var(--header-bg)
 }
 
 .page-header__cart {
-    margin-right: 20px;
+  margin-right: 20px;
   margin-left: auto;
+  margin-bottom: 5px;
   background: none;
   border: none;
+  padding-bottom: 8px;
 }
 
 .page-header__cart::before {
@@ -32,14 +26,17 @@
 }
 
 .page-header__contact-btn {
+  display: flex;
+  align-items: center;
   border: 1px solid rgba(255, 255, 255, 1);
-  font-size: 18px;
-  line-height: 62px;
-  padding: 0 20px;
+  font-size: min(18px, 4vw);
+  height: 62px;
+  padding: 0 min(2vw, 20px);
+  justify-self: end;
 }
 
 .logo {
-grid-column: 1/-1;
+  grid-column: 1/-1;
   display: flex;
-  max-width: 40vw;
+  max-width: 35vw;
 }
