@@ -1,5 +1,6 @@
 .page-header {
   padding: 0.5em;
+  padding-bottom: min(5vh, 5em);
   display: flex;
   align-items: center;
   background: var(--header-bg)

@@ -1,4 +1,12 @@
 .slogan {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  color: var(--accent-color);
+  font-family: Orbitron;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.banner .slogan {
+  max-width: 50%;
 }

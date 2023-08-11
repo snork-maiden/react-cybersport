@@ -1,4 +1,19 @@
-a {
-  font-size: 18px;
-  line-height: 30px;
+.button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: min(18px, 4vw);
+  height: 62px;
+  padding: min(5vw, 20px);
+  transition: border 0.2s;
+}
+
+.button--default{
+  background-color: var(--accent-color);
+}
+
+
+
+.button:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
 }

@@ -38,14 +38,30 @@ body {
   min-height: 100vh;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 :root {
   --header-bg: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.88) 0%,
     rgba(0, 0, 0, 0.88) 53%,
-    rgba(87, 184, 255, 1) 53%,
-    rgba(87, 184, 255, 1) 100%
+    var(--accent-color) 53%,
+    var(--accent-color) 100%
   );
+  --accent-color: rgba(87, 184, 255, 1);
+  --secondary-text: rgba(153, 153, 153, 1);
+  ;
 }
 
 
