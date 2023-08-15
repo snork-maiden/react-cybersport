@@ -4,7 +4,7 @@ import "./Button.css";
 
 const Button = ({ children, buttonType }) => {
   return (
-    <a href="#" className={`button--${buttonType || 'default'}` +' button'}>
+    <a href="#" className={`button button--${buttonType || 'default'}`}>
       {children}
     </a>
   );

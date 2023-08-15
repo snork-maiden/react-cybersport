@@ -15,7 +15,7 @@ const Banner = () => {
       <a href="#" className="banner__lifestream-image">
         <img src="/images/banner.png" alt="Guy in green ask you to join our stream" />
       </a>
-      <p className="banner__text">
+      <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec
         donec in morbi pulvinar. Enim non pulvinar neque.
       </p>

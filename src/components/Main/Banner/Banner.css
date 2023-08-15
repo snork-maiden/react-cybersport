@@ -38,13 +38,7 @@
     margin-left: auto;
 }
 
-.banner__text {
-  max-width: 50%;
-  color: var(--secondary-text);
-  font-size: min(3.7vw, 18px);
-  line-height: 1.5;
-  margin-bottom: 2em;
-}
+
 
 .banner__buttons {
     display: flex;
