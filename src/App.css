@@ -34,6 +34,7 @@ img {
 body {
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
+  line-height: 5/3;
   color: white;
   background-color: black;
   min-height: 100vh;
@@ -62,4 +63,5 @@ body {
   );
   --accent-color: rgba(87, 184, 255, 1);
   --secondary-text: rgba(153, 153, 153, 1);
+  --secondary-bg-color: rgba(42, 49, 60, 1)
 }

@@ -1,0 +1,10 @@
+.footer-menu__title {
+  font-size: min(5vw, 18px);
+  margin-bottom: 1em;
+}
+
+.footer-menu__item {
+  font-size: 15px;
+  color: var(--secondary-text);
+  padding: 0.6em;
+}

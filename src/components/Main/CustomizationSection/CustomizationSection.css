@@ -1,5 +1,5 @@
 .customization {
-  background-color: rgba(42, 49, 60, 1);
+  background-color: var(--secondary-bg-color);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0 0.3em;
@@ -49,5 +49,3 @@
   outline: 8px solid rgba(59, 61, 70, 1);
   border-radius: 20px;
 }
-
-
