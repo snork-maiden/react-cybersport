@@ -9,7 +9,6 @@ const Main = () => {
   return (
     <main className="page-main">
       <h1 className="visually-hidden">Infinizai</h1>
-
       <Banner />
       <CustomizationSection />
       <News />

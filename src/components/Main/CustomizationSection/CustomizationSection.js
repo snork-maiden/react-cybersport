@@ -6,11 +6,9 @@ import Slogan from "../Slogan/Slogan";
 const CustomizationSection = () => {
   return (
     <section className="customization">
-      <div className="customization__slogan">
-        <Slogan />
-      </div>
+      <Slogan />
       <h2 className="title customization__title">Customize your Own Character</h2>
-      <img src="images/customization-main.png" alt="Computer game character in goggles" className="customization__img" />
+      <img src="images/customization-main.png" alt="Computer game character in goggles" className="customization__image" />
       <p class="description customization__text">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
       </p>
@@ -18,7 +16,7 @@ const CustomizationSection = () => {
       <ul className="customization__gallery gallery">
         <li className="gallery__item">
           <a href="#" className="gallery__link gallery__link--current">
-          <img src="images/customization-gallery-1.png" alt="" className="gallery__img" />
+            <img src="images/customization-gallery-1.png" alt="" className="gallery__img" />
           </a>
         </li>
         <li className="gallery__item">
@@ -28,7 +26,7 @@ const CustomizationSection = () => {
         </li>
         <li className="gallery__item">
           <a href="#" className="gallery__link">
-          <img src="images/customization-gallery-3.png" alt="" className="gallery__img" />
+            <img src="images/customization-gallery-3.png" alt="" className="gallery__img" />
           </a>
         </li>
       </ul>
