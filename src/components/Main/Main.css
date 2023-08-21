@@ -1,11 +1,11 @@
 .title {
-  font-size: min(8vw, 72px);
+  font-size: clamp(2em, 7.3vw, 72px);
   line-height: 1.2;
   max-width: 656px;
 }
 
 .description {
-  max-width: 50%;
+  max-width: 50vw;
   color: var(--secondary-text);
   font-size: min(3.7vw, 18px);
   line-height: 1.5;

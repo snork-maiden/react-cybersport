@@ -38,6 +38,7 @@ body {
   color: white;
   background-color: black;
   min-height: 100vh;
+  max-width: 100vw;
 }
 
 .visually-hidden {
@@ -63,5 +64,17 @@ body {
   );
   --accent-color: rgba(87, 184, 255, 1);
   --secondary-text: rgba(153, 153, 153, 1);
-  --secondary-bg-color: rgba(42, 49, 60, 1)
+  --secondary-bg-color: rgba(42, 49, 60, 1);
+}
+
+@media screen and (min-width: 750px) {
+  :root {
+    --header-bg: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.88) 70%,
+      var(--accent-color) 70%,
+      var(--accent-color) 100%
+    );
+  }
 }

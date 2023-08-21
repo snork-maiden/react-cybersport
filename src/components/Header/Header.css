@@ -3,7 +3,7 @@
   padding-bottom: min(5vh, 5em);
   display: flex;
   align-items: center;
-  background: var(--header-bg)
+  background: var(--header-bg);
 }
 
 .page-header__cart {
@@ -13,6 +13,12 @@
   background: none;
   border: none;
   padding-bottom: 8px;
+}
+
+@media screen and (min-width: 750px) {
+  .page-header__cart {
+    margin-right: 2.5em;
+  }
 }
 
 .page-header__cart::before {

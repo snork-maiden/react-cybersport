@@ -5,7 +5,21 @@
   padding: 0.5em;
 }
 
+@media screen and (min-width: 750px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    grid-template-areas:
+      "slogan slogan ."
+      "title title ."
+      "text image image"
+      "buttons buttons .";
+  }
+}
+
 .banner__title {
+  grid-area: title;
   margin-bottom: 1em;
 }
 
@@ -26,22 +40,44 @@
   height: 2vh;
   z-index: 2;
 }
-.banner__lifestream-link {
-  transition: transform 0.2s;
+
+.banner__description {
+  grid-area: text;
+  align-self: center;
 }
-.banner__lifestream-link:hover {
+.banner__lifestream-image {
+  grid-area: image;
+  transition: transform 0.2s;
+  max-width: 90vw;
+  margin-left: auto;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 750px) and (hover: none) {
+  .banner__lifestream-image {
+    transform: scale(1.15);
+  }
+}
+
+.banner__lifestream-image:hover {
   transform: scale(1.02);
 }
 
-.banner__lifestream-image {
-    max-width: 90vw;
-    margin-left: auto;
+.banner__buttons {
+  grid-area: buttons;
+  display: flex;
+  margin-bottom: 2em;
+  gap: 2em;
 }
 
-
-
-.banner__buttons {
-    display: flex;
+@media screen and (max-width: 750px) {
+  .banner__buttons {
     justify-content: space-between;
-    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .banner__buttons {
+    margin-top: 2em;
+  }
 }
