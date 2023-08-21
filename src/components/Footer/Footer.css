@@ -1,16 +1,33 @@
 .page-footer {
+    max-width: 100vw;
   background-color: var(--secondary-bg-color);
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: clamp(1.5em, 10vw, 6em) clamp(1.5em, 5vw, 4em);
 }
 .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (min-width: 750px) {
+    .page-footer {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .copyright {
+      order: -1;
+      max-width: 289px;
+      align-items: start;
+    }
+
+    .copyright__text {
+        padding-top: 2em;
+    }
+  }
 .copyright__text {
   cursor: default;
   color: var(--secondary-text);

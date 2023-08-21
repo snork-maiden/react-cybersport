@@ -28,7 +28,6 @@
 
 .customization__title {
   grid-area: title;
-  /* grid-column: 1/-1; */
   margin-bottom: 0.5em;
 }
 
