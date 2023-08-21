@@ -11,7 +11,7 @@ const News = () => {
       <h2 className="title news__title">Latest News & Articles</h2>
 
       <ul className="news__list">
-        <li className="news__item">
+        <li className="news__item news__item--headline">
           <article className="article">
             <a href="#" className="article__link">
               <img

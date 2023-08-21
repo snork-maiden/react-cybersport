@@ -5,6 +5,12 @@
   padding-bottom: 5em;
 }
 
+@media screen and (min-width: 750px) {
+  .news {
+    padding-top: clamp(3em, 10vh, 8em);
+  }
+}
+
 .news *:first-child {
   align-self: start;
 }
@@ -22,8 +28,24 @@
   flex-grow: 1;
 }
 
-.article {
-  flex-basis: 200px;
+@media screen and (min-width: 750px) {
+  .news__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+
+  .news__item--headline {
+    grid-column: 1/-1;
+  }
+
+  .news__item--headline .article__link {
+    max-width: initial;
+  }
+  .news__item--headline .article__title {
+    font-size: min(4vw, 36px);
+  }
 }
 
 .article__link {
