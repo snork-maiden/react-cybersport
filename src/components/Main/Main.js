@@ -7,7 +7,7 @@ import News from "./News/News";
 
 const Main = () => {
   return (
-    <main>
+    <main className="page-main">
       <h1 className="visually-hidden">Infinizai</h1>
 
       <Banner />

@@ -1,5 +1,5 @@
 .title {
-  font-size: min(10vw, 72px);
+  font-size: min(8vw, 72px);
   line-height: 1.2;
   max-width: 656px;
 }
@@ -10,4 +10,8 @@
   font-size: min(3.7vw, 18px);
   line-height: 1.5;
   margin-bottom: 2em;
+}
+
+.page-main > * {
+  padding: 1.5em;
 }
