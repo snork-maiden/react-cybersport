@@ -35,13 +35,11 @@ const Menu = () => {
           <path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M4 18h16M4 12h16M4 6h16" />
         </svg>
       </button>
-      {isOpen && (
-        <ul className="page-nav__list">
-          {menuItems.map((item, index) => (
-            <MenuItem key={index}>{item}</MenuItem>
-          ))}
-        </ul>
-      )}
+      <ul className={`page-nav__list ${isOpen ? 'page-nav__list--open' : ''}`}>
+        {menuItems.map((item, index) => (
+          <MenuItem key={index}>{item}</MenuItem>
+        ))}
+      </ul>
     </nav>
   );
 };

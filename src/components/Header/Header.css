@@ -6,6 +6,13 @@
   background: var(--header-bg);
 }
 
+.page-header .logo {
+  order: -1;
+  grid-column: 1/-1;
+  display: flex;
+  max-width: 35vw;
+}
+
 .page-header__cart {
   margin-right: 20px;
   margin-left: auto;
@@ -42,8 +49,3 @@
   justify-self: end;
 }
 
-.logo {
-  grid-column: 1/-1;
-  display: flex;
-  max-width: 35vw;
-}

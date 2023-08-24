@@ -1,15 +1,19 @@
-a {
+.menu-item__link {
   font-size: 1em;
   line-height: 26px;
   letter-spacing: 0em;
 }
 
-li {
+.menu-item {
   padding: 0.7em;
 }
 
+.menu-item:first-child {
+  color: var(--accent-text-color);
+}
+
 @media screen and (min-width: 35rem) {
-  a {
+  .menu-item {
     font-size: 16px;
   }
 }

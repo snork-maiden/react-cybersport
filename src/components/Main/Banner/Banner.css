@@ -9,6 +9,7 @@
 
 @media screen and (min-width: 750px) {
   .banner {
+    padding-left: clamp(1.5em, 4vw, 4em);
     display: grid;
     grid-template-columns: 30% 40% 30%;
 
@@ -17,6 +18,19 @@
       "title title ."
       "text image image"
       "buttons buttons .";
+  }
+}
+@media screen and (min-width: 1000px) {
+  .banner {
+    padding-left: clamp(1.5em, 4vw, 4em);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "slogan image"
+      "title image"
+      "text image"
+      "buttons image";
   }
 }
 
@@ -45,10 +59,17 @@
 
 .banner__description {
   grid-area: text;
-  align-self: center;
 }
+
+@media screen and (min-width: 750px) {
+  .banner__description {
+    align-self: center;
+  }
+}
+
 .banner__lifestream-image {
   grid-area: image;
+  align-self: center;
   transition: transform 0.2s;
   max-width: 90vw;
   margin-left: auto;
@@ -63,6 +84,28 @@
 
 .banner__lifestream-image:hover {
   transform: scale(1.02);
+}
+
+.banner__contacts {
+  display: none;
+  /* I hide social media links on smaller devises due to assumption that user is able to reach those links also by clicking "Contact us" button. */
+  text-transform: uppercase;
+  color: var(--secondary-text);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+
+@media screen and (min-width: 1000px) {
+  .banner__contacts {
+    display: flex;
+  }
+}
+
+.banner__network-link {
+  font-size: 11px;
 }
 
 .banner__buttons {

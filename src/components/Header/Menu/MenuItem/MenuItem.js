@@ -4,7 +4,7 @@ import "./MenuItem.css";
 
 const MenuItem = ({ children }) => {
   return (
-    <li><a href='#'>{children}</a></li>
+    <li className="menu-item"><a className="menu-item__link" href='#'>{children}</a></li>
 
   );
 };

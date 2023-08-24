@@ -1,5 +1,6 @@
 .title {
-  font-size: clamp(2em, 7.3vw, 72px);
+  text-align: left;
+  font-size: clamp(2em, 5.5vw, 72px);
   line-height: 1.2;
   max-width: 656px;
 }

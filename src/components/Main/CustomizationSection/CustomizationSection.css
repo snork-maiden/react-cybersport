@@ -8,11 +8,11 @@
     "title title"
     "image text"
     "gallery gallery";
-  padding-left: 0;
-}
-
-@media screen and (min-width: 750px) {
-  .customization {
+  }
+  
+  @media screen and (min-width: 750px) {
+    .customization {
+    padding-left: 0;
     padding-top: 0;
     grid-template-areas:
       "image slogan"
@@ -33,7 +33,6 @@
 
 .customization__text {
   position: relative;
-  bottom: 1em;
   grid-area: text;
   min-width: 10.5em;
   padding-left: 1.5em;
@@ -44,6 +43,7 @@
 
 .customization__image {
   grid-area: image;
+  margin-bottom: 2em;
 }
 
 .gallery {

@@ -8,8 +8,8 @@ const Header = () => {
 
   return (
     <header className="page-header">
-      <Logo className="logo" />
-      <Menu className="menu" />
+      <Logo />
+      <Menu />
       <button className="page-header__cart">
         <svg
           width="31"

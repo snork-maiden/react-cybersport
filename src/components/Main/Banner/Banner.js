@@ -19,6 +19,11 @@ const Banner = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec
         donec in morbi pulvinar. Enim non pulvinar neque.
       </p>
+      <ul className="banner__contacts">
+        <li className="banner__network"><a href="facebook.com" className="banner__network-link">Facebook</a></li>
+        <li className="banner__network"><a href="instagram.con" className="banner__network-link">Instagram</a></li>
+        <li className="banner__network"><a href="twitch.com" className="banner__network-link">Twitch</a></li>
+      </ul>
       <div className="banner__buttons">
         <Button>
           Explore More
