@@ -12,17 +12,22 @@
   border: none;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
   .page-nav {
     margin: auto;
   }
   .burger-button {
     display: none;
   }
-
 }
 
-@media screen and (max-width: 999px){
+.page-nav__list {
+  display: flex;
+  gap: min(4vw, 60px);
+  padding: 1em;
+}
+
+@media screen and (max-width: 999px) {
   .page-nav__list {
     display: none;
     position: absolute;
@@ -32,12 +37,6 @@
     z-index: 3;
     width: 25vw;
   }
-}
-
-
-.page-nav__list {
-  display: flex;
-  padding: 1em;
 }
 
 .page-nav__list--open {
@@ -53,4 +52,3 @@
   left: 0;
   right: 0;
 }
-

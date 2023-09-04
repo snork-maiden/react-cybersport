@@ -88,14 +88,21 @@
 
 .banner__contacts {
   display: none;
-  /* I hide social media links on smaller devises due to assumption that user is able to reach those links also by clicking "Contact us" button. */
+  /* I hide social media links on smaller devises due to an assumption that user is able to reach those links also by clicking "Contact us" button. */
   text-transform: uppercase;
   color: var(--secondary-text);
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 30%;
+  font-size: 10px;
+  gap: 50px;
+}
+
+.banner__contact-link:hover,
+.banner__contact-link:active {
+  color: var(--main-text-color);
 }
 
 @media screen and (min-width: 1000px) {
