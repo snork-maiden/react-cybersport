@@ -110,11 +110,9 @@ const News = () => {
           </article>
         </li>
       </ul>
-      <div className="news__button-wrapper">
         <Button>
           Read More
         </Button>
-      </div>
     </section>
   );
 };
