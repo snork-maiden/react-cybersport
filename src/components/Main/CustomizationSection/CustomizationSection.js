@@ -8,7 +8,10 @@ const CustomizationSection = () => {
     <section className="customization">
       <Slogan />
       <h2 className="title customization__title">Customize your Own Character</h2>
-      <img src="images/customization-main.png" alt="Computer game character in goggles" className="customization__image" />
+      <img src="images/customization-main.png" srcSet="
+       images/customization-main-s.png 448w
+      images/customization-main.png 597w 
+       images/customization-main-l.png 1193w " alt="Computer game character in goggles" className="customization__image" />
       <p class="description customization__text">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
       </p>

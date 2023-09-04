@@ -13,16 +13,18 @@ const Banner = () => {
         <span className="banner__title-accent">Generation</span> <br /> of Gaming
       </div>
       <a href="#" className="banner__lifestream-image">
-        <img src="/images/banner.png" alt="Guy in green ask you to join our stream" />
+        <img src="/images/banner-s.png" alt="Guy in green ask you to join our stream" srcSet="/images/banner-s.png / 496w
+        /images/banner-s.png / 661w
+        images/banner-2x.png 1321w" sizes="(min-width: 750px) 50vw, 96vw"/>
       </a>
       <p className=" banner__description description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec
         donec in morbi pulvinar. Enim non pulvinar neque.
       </p>
       <ul className="banner__contacts">
-        <li className="banner__network"><a href="facebook.com" className="banner__network-link">Facebook</a></li>
-        <li className="banner__network"><a href="instagram.con" className="banner__network-link">Instagram</a></li>
-        <li className="banner__network"><a href="twitch.com" className="banner__network-link">Twitch</a></li>
+        <li className="banner__contact"><a href="facebook.com" className="banner__contact-link">Facebook</a></li>
+        <li className="banner__contact"><a href="instagram.con" className="banner__contact-link">Instagram</a></li>
+        <li className="banner__contact"><a href="twitch.com" className="banner__contact-link">Twitch</a></li>
       </ul>
       <div className="banner__buttons">
         <Button>
