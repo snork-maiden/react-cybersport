@@ -4,7 +4,13 @@ import "./Menu.css";
 import MenuItem from "./MenuItem/MenuItem";
 
 const Menu = () => {
-  const menuItems = ['Home', 'About', 'Team', 'Shop', 'Pages']
+  const menuItems = [
+    { label: 'Home', url: null },
+    { label: 'About', url: '#' },
+    { label: 'Team', url: '#' },
+    { label: 'Shop', url: '#' },
+    { label: 'Pages', url: '#' }
+  ];
   const [isOpen, setIsOpen] = useState(false);
 
   const closeMenuOnEscape = (event) => {
@@ -37,8 +43,7 @@ const Menu = () => {
       </button>
       <ul className={`page-nav__list ${isOpen ? 'page-nav__list--open' : ''}`}>
         {menuItems.map((item, index) => (
-          <MenuItem key={index}>{item}</MenuItem>
-        ))}
+          <MenuItem key={index} url={item.url}>{item.label}</MenuItem>))}
       </ul>
     </nav>
   );

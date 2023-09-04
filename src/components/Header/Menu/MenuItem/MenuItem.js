@@ -2,11 +2,19 @@
 import React from "react";
 import "./MenuItem.css";
 
-const MenuItem = ({ children }) => {
+const MenuItem = ({ children, url }) => {
   return (
-    <li className="menu-item"><a className="menu-item__link" href='#'>{children}</a></li>
-
+    <li className="menu-item">
+      {url !== null ? (
+        <a className="menu-item__link" href={url}>
+          {children}
+        </a>
+      ) : (
+        <a className="menu-item__link">
+          {children}
+        </a>
+      )}
+    </li>
   );
 };
-
 export default MenuItem;
