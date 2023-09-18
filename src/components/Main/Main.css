@@ -10,7 +10,7 @@
   color: var(--secondary-text);
   font-size: min(3.7vw, 18px);
   line-height: 1.5;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .page-main > * {

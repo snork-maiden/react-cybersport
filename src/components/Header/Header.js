@@ -7,8 +7,8 @@ import Menu from "./Menu/Menu";
 const Header = () => {
 
   return (
-    <header className="page-header">
-      <div className="page-header__wrapper">
+    <div className="page-header__wrapper">
+      <header className="page-header">
         <Logo />
         <Menu />
         <button className="page-header__cart">
@@ -35,8 +35,8 @@ const Header = () => {
           </svg>
         </button>
         <a className="page-header__contact-btn">Contact Us</a>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 };
 

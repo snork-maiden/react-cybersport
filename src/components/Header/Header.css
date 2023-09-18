@@ -1,14 +1,21 @@
-.page-header {
+.page-header__wrapper {
   background: var(--header-bg);
 }
 
-.page-header__wrapper {
+.page-header {
   margin: 0 auto;
+  margin-bottom: -2px;
   padding-top: 20px;
   padding-bottom: min(5vh, 5em);
   display: flex;
   align-items: center;
   max-width: min(95vw, 1320px);
+}
+
+@media screen and (min-width: 1000px) {
+  .page-header {
+    padding-bottom: 11.63em;
+  }
 }
 
 .page-header .logo {
