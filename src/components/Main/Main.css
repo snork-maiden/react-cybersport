@@ -1,8 +1,9 @@
 .title {
   text-align: left;
-  font-size: clamp(2em, 5.5vw, 72px);
-  line-height: 1.2;
+  font-size: clamp(2em, 5vw, 64px);
+  line-height: 115%;
   max-width: 656px;
+  text-transform: capitalize;
 }
 
 .description {
@@ -11,8 +12,4 @@
   font-size: min(3.7vw, 18px);
   line-height: 1.5;
   margin-bottom: 1em;
-}
-
-.page-main > * {
-  padding: 1.5em;
 }

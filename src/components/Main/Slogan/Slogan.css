@@ -1,13 +1,19 @@
 .slogan {
+  text-transform: uppercase;
   grid-area: slogan;
   display: flex;
+  gap: 8px;
+  line-height: 1;
   align-items: center;
   color: var(--accent-color);
   font-family: Orbitron;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
-.banner .slogan {
-  max-width: 50%;
+.slogan svg {
+  position: relative;
+  top: 2px;
 }
+
+
