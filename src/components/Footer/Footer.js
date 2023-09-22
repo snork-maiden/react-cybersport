@@ -20,18 +20,20 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="page-footer">
+    <div className="page-footer__wrapper">
+      <footer className="page-footer">
 
-        <FooterMenu title="Menu items" menuItems={mainMenuItems} />
-        <FooterMenu title="Other Pages" menuItems={secondaryMenuItems} />
-        <div className="copyright">
-          <Logo />
-          <p className="copyright__text">
-            Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc
-            quam ac sed turpis volutpat. Cursus sed massa non.
-          </p>
-        </div>
+      <FooterMenu title="Menu items" menuItems={mainMenuItems} />
+      <FooterMenu title="Other Pages" menuItems={secondaryMenuItems} />
+      <div className="copyright">
+        <Logo />
+        <p className="copyright__text">
+          Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc
+          quam ac sed turpis volutpat. Cursus sed massa non.
+        </p>
+    </div>
     </footer>
+      </div>
   );
 };
 

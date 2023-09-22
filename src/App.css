@@ -72,6 +72,7 @@ body {
 
   --secondary-text: rgba(153, 153, 153, 1);
   --secondary-bg-color: rgba(42, 49, 60, 1);
+  --footer-bg-color: rgba(34, 39, 48, 1)
 }
 
 @media screen and (min-width: 750px) {
@@ -79,8 +80,8 @@ body {
     --header-bg: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.88) 0%,
-      rgba(0, 0, 0, 0.88) 70%,
-      var(--accent-color) 70%,
+      rgba(0, 0, 0, 0.88) 75%,
+      var(--accent-color) 75%,
       var(--accent-color) 100%
     );
   }
