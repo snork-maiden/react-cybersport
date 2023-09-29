@@ -1,17 +1,39 @@
 .customization {
+  position: relative;
   background-color: var(--secondary-bg-color);
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 0 2vw;
+  gap: 0 min(2vw, 128px);
   grid-template-areas:
     "slogan slogan"
     "title title"
     "image text"
     "gallery gallery";
-  }
-  
-  @media screen and (min-width: 750px) {
-    .customization {
+}
+
+.customization .slogan {
+  margin-top: 4.1em;
+  margin-bottom: -2px;
+}
+
+.customization__title {
+  grid-area: title;
+}
+
+.customization__text {
+  grid-area: text;
+  min-width: 10.5em;
+}
+.customization__gallery {
+  grid-area: gallery;
+}
+
+.customization__image {
+  grid-area: image;
+}
+
+@media screen and (min-width: 750px) {
+  .customization {
     padding-left: 0;
     padding-top: 0;
     grid-template-areas:
@@ -20,11 +42,14 @@
       "image gallery"
       "text gallery";
   }
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
 }
-  @media screen and (min-width: 1000px) {
-    .customization {
-    padding-left: 0;
-    padding-top: 0;
+@media screen and (min-width: 1000px) {
+  .customization {
     grid-template-areas:
       "image slogan"
       "image title"
@@ -33,62 +58,21 @@
   }
 
   .gallery {
-    justify-content: flex-start;
-  }
-}
-  @media screen and (min-width: 1200px) {
-    .customization {
-
-    grid-template-areas:
-      "image slogan"
-      "image title"
-      "image text"
-      "image gallery";
-  }
-
-  .gallery {
-    justify-content: flex-start;
+    justify-content: start;
   }
 }
 
-.customization .slogan {
-  margin-top: 4em;
+@media screen and (max-width: 1199px) {
+  .customization__image {
+    margin-bottom: 2em;
+  }
 }
-
-.customization__title {
-  grid-area: title;
-  margin-bottom: 0.5em;
-}
-
-.customization__text {
-  position: relative;
-  grid-area: text;
-  min-width: 10.5em;
-  padding-left: 1.5em;
-}
-.customization__gallery {
-  grid-area: gallery;
-}
-
-.customization__image {
-  grid-area: image;
-  margin-bottom: 2em;
-}
-
 .gallery {
   display: flex;
   justify-content: space-between;
-  gap: 1em;
+  gap: 1.2em;
   padding-top: 2em;
   margin-bottom: 3em;
-}
-
-@media screen and (min-width: 750px) {
-  .gallery {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 1em;
-  }
 }
 
 .gallery__item {
@@ -106,6 +90,58 @@
 .gallery__link:hover .gallery__img,
 .gallery__link:active .gallery__img,
 .gallery__link--current .gallery__img {
-  outline: 8px solid rgba(59, 61, 70, 1);
+  outline: 11px solid rgba(59, 61, 70, 1);
   border-radius: 20px;
 }
+
+.gallery__img {
+  aspect-ratio: 180/107;
+}
+
+@media screen and (min-width: 1200px) {
+  .customization {
+    padding: 0 60px;
+    grid-template-columns: 1fr 590px;
+    gap: 0 128px;
+    grid-template-rows: 1fr repeat(4, min-content) 1fr;
+    grid-template-areas:
+      ". ."
+      ". slogan"
+      ". title"
+      ". text"
+      ". gallery"
+      ". .";
+    align-items: center;
+    justify-content: center;
+
+    height: 695px;
+  }
+
+  .customization__title {
+    margin-bottom: 38px;
+  }
+
+  .customization__image {
+    position: absolute;
+    left: 3.8%;
+    top: 0;
+  }
+
+  .customization__text {
+    margin-bottom: 3.2em;
+    font-size: 20px;
+  }
+
+  .gallery {
+    margin: 0;
+    margin-left: 11px;
+    margin-bottom: 11px;
+    padding: 0;
+  }
+
+  .customization .slogan {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+}
+

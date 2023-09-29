@@ -141,10 +141,16 @@
 @media screen and (min-width: 750px) {
   .banner__buttons {
     margin-top: 2em;
-    margin-bottom: min(28vh, 14em);
+    margin-bottom: min(28vh, 13.8em);
   }
+}
+
+.banner .title {
+  font-size: clamp(2em, 5.5vw, 72px);
+  line-height: 1.2;
 }
 
 .banner .slogan {
   max-width: 50%;
+  margin-bottom: 1em;
 }
