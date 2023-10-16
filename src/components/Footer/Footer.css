@@ -18,6 +18,14 @@
   align-items: center;
 }
 
+.copyright__text {
+  cursor: default;
+  color: var(--secondary-text);
+  font-size: min(3vw, 15px);
+  line-height: 1.67;
+  max-width: 289px;
+}
+
 @media screen and (min-width: 750px) {
   .page-footer {
     flex-wrap: nowrap;
@@ -49,11 +57,4 @@
   .copyright__text {
     padding-top: 2em;
   }
-}
-.copyright__text {
-  cursor: default;
-  color: var(--secondary-text);
-  font-size: min(3vw, 15px);
-  line-height: 1.67;
-  max-width: 289px;
 }

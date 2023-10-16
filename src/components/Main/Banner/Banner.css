@@ -7,28 +7,14 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 750px) {
-  .banner {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-
-    grid-template-areas:
-      "slogan slogan ."
-      "title title ."
-      "text image image"
-      "buttons buttons .";
-  }
+.banner .title {
+  font-size: clamp(2em, 5.5vw, 72px);
+  line-height: 1.2;
 }
-@media screen and (min-width: 1000px) {
-  .banner {
-    padding-left: clamp(1.5em, 3.8vw, 4em);
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "slogan image"
-      "title image"
-      "text image"
-      "buttons image";
-  }
+
+.banner .slogan {
+  max-width: 50%;
+  margin-bottom: 1em;
 }
 
 .banner__title {
@@ -60,12 +46,6 @@
   max-width: min(55vw, 615px);
 }
 
-@media screen and (min-width: 750px) {
-  .banner__description {
-    align-self: center;
-  }
-}
-
 .banner__lifestream-image {
   width: 660px;
   overflow: visible;
@@ -78,14 +58,8 @@
 .banner__lifestream-image img {
   width: 100%;
   position: relative;
-
+  max-width: 60vw;
   padding-top: 8px;
-}
-
-@media screen and (min-width: 750px) and (hover: none) {
-  .banner__lifestream-image {
-    transform: scale(1.15);
-  }
 }
 
 .banner__lifestream-image:hover {
@@ -111,16 +85,6 @@
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 1000px) {
-  .banner__contacts {
-    display: flex;
-  }
-
-  .banner__lifestream-image img {
-    right: 44px;
-  }
-}
-
 .banner__network-link {
   font-size: 11px;
 }
@@ -139,18 +103,44 @@
 }
 
 @media screen and (min-width: 750px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    grid-template-areas:
+      "slogan slogan ."
+      "title title ."
+      "text image image"
+      "buttons buttons .";
+  }
+  .banner__description {
+    align-self: center;
+  }
   .banner__buttons {
     margin-top: 2em;
     margin-bottom: min(28vh, 13.8em);
   }
 }
 
-.banner .title {
-  font-size: clamp(2em, 5.5vw, 72px);
-  line-height: 1.2;
-}
 
-.banner .slogan {
-  max-width: 50%;
-  margin-bottom: 1em;
+@media screen and (min-width: 1000px) {
+  .banner {
+    padding-top: min(10vh, 11.63em);
+
+    padding-left: clamp(1.5em, 3.8vw, 4em);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "slogan image"
+      "title image"
+      "text image"
+      "buttons image";
+  }
+  .banner__contacts {
+    display: flex;
+  }
+
+  .banner__lifestream-image img {
+    right: 44px;
+    max-width: 55vw;
+  }
 }
