@@ -67,8 +67,8 @@ body {
 
   --main-text-color: #fff;
 
-  --accent-color: rgba(87, 184, 255, 1);
-  --accent-text-color: rgba(250, 196, 34, 1);
+  --accent-color: #57b8ff;
+  --accent-text-color: #fac422;
 
   --secondary-text: rgba(153, 153, 153, 1);
   --secondary-bg-color: rgba(42, 49, 60, 1);
