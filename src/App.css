@@ -72,7 +72,8 @@ body {
 
   --secondary-text: rgba(153, 153, 153, 1);
   --secondary-bg-color: rgba(42, 49, 60, 1);
-  --footer-bg-color: rgba(34, 39, 48, 1)
+  --footer-bg-color: rgba(34, 39, 48, 1);
+  --customization-link-outline-color: rgba(59, 61, 70, 1)
 }
 
 @media screen and (min-width: 750px) {

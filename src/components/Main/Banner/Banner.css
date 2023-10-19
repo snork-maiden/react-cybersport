@@ -1,9 +1,14 @@
 .banner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
   background-image: var(--header-bg);
+  grid-template-areas:
+    "slogan ."
+    "title title"
+    "text image"
+    "buttons buttons";
   padding: 0 0.5em;
-  max-width: 100vw;
+  /* max-width: 100vw; */
   overflow: hidden;
 }
 
@@ -13,7 +18,6 @@
 }
 
 .banner .slogan {
-  max-width: 50%;
   margin-bottom: 1em;
 }
 
@@ -44,6 +48,7 @@
 .banner__description {
   grid-area: text;
   max-width: min(55vw, 615px);
+  align-self: center;
 }
 
 .banner__lifestream-image {
@@ -53,6 +58,7 @@
   transition: transform 0.2s;
   max-width: 90vw;
   margin-left: auto;
+  position: relative;
 }
 
 .banner__lifestream-image img {
@@ -72,10 +78,9 @@
   text-transform: uppercase;
   color: var(--secondary-text);
   writing-mode: vertical-lr;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(-120px);
   position: absolute;
   left: 20px;
-  top: 43%;
   font-size: 11px;
   gap: 52px;
 }
@@ -100,12 +105,16 @@
   .banner__buttons {
     justify-content: space-between;
   }
+
+  .banner__lifestream-image {
+    transform: translate(-5%, -10%);
+  }
 }
 
 @media screen and (min-width: 750px) {
   .banner {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
+    padding: 1em;
+    grid-template-columns: 40vw 40vw 20vw;
 
     grid-template-areas:
       "slogan slogan ."
@@ -113,15 +122,11 @@
       "text image image"
       "buttons buttons .";
   }
-  .banner__description {
-    align-self: center;
-  }
+
   .banner__buttons {
     margin-top: 2em;
-    margin-bottom: min(28vh, 13.8em);
   }
 }
-
 
 @media screen and (min-width: 1000px) {
   .banner {
@@ -142,5 +147,9 @@
   .banner__lifestream-image img {
     right: 44px;
     max-width: 55vw;
+  }
+
+  .banner__buttons {
+    margin-bottom: min(28vh, 13.8em);
   }
 }

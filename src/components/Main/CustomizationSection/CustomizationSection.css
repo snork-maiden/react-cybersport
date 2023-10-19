@@ -35,6 +35,7 @@
 
 .customization__image {
   grid-area: image;
+  align-self: center;
 }
 
 .gallery {
@@ -54,13 +55,13 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  background-color: rgba(59, 61, 70, 1);
+  background-color: var(--customization-link-outline-color);
 }
 
 .gallery__link:hover .gallery__img,
 .gallery__link:active .gallery__img,
 .gallery__link--current .gallery__img {
-  outline: 11px solid rgba(59, 61, 70, 1);
+  outline: 11px solid var(--customization-link-outline-color);
   border-radius: 20px;
 }
 
@@ -83,6 +84,11 @@
     justify-content: center;
     margin-bottom: 1em;
   }
+
+  .customization__text {
+    padding-top: 2em;
+    justify-self: center;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -100,9 +106,9 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .customization__image {
+  /* .customization__image {
     margin-bottom: 2em;
-  }
+  } */
 }
 @media screen and (min-width: 1200px) {
   .customization {
